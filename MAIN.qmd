@@ -1,0 +1,79 @@
+---
+project:
+  output-dir: docs
+
+title: "Disciplina: Estatística Educacional"
+subtitle: "Prof. Dr. Héliton Ribeiro Tavares"
+
+author:
+  name: "Breno Cauã Rodrigues da Silva"
+  corresponding: true
+  orcid: 0009-0005-9740-2069
+  affiliation:
+    - Universidade Federal do Pará
+    - Instituto de Ciências Exatas e Naturais
+    - Curso de Bacharelado em Estatística
+
+  page-footer:
+    
+    left: |
+      Copyright: (**SILVA, B.C.R - 2024**)
+    right: |
+      Construído <a href="https://quarto.org/"> Pacote Quarto no R4.3</a>.
+      
+
+  repo-url : https://github.com/csilv7/ESTATISTICA_EDUCACIONAL
+  repo-subdir: book
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook]
+  page-navigation: true
+
+format:
+  html:
+    number-sections: true
+    df-print: paged
+    theme:
+      light: [blue,custom.scss]
+      dark:  [cyborg,custom.scss]
+    toc: true
+    toc-title: Índice
+    toc-location: right
+    code-fold: true
+    code-tools: true
+    code-link: true
+  pdf:
+    documentclass: article
+    number-sections: true
+    pdf-engine: xelatex
+    fontsize: 12pt
+    geometry: margin=2cm
+    toc: true
+  docx:
+    number-sections: true
+
+execute:
+  echo: true
+
+lang: pt
+---
+
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+# Apresentação {.unnumbered}
+
+-   **Prof. Dr. Héliton Ribeiro Tavares:** Possui graduação em Estatística pela Universidade de São Paulo (1992), mestrado em Estatística pela Universidade de São Paulo (1995), doutorado em Estatística pela Universidade de São Paulo (2001) e Pós-Doutorado na University of Florida (2016). Atualmente é professor Titular da Universidade Federal do Pará. Tem experiência na área de Probabilidade e Estatística, com ênfase em Modelagem e Análise de Dados Educacional, atuando principalmente em Teoria da Resposta ao Item, voltada para Avaliação Educacional, recebe a maior dedicação do pesquisador. Na UFPA foi Diretor do DERCA/CIAC e Diretor de Planejamento. No INEP/MEC foi Coordenador-Geral de Instrumentos e Medidas e Diretor de Avaliação da Educação Básica (2008-2010), Avaliador de Cursos e de Instituição da Educação Superior (2007-2011). Compõe a coordenação do Sistema de Avaliação do Rendimento Escolar do Estado de São Paulo (SARESP 2010-2019) e é Consultor para implantação do Sistema Paraense de Avaliação Educacional (SisPAE 2013-2016) junto à Seduc/BID. É Coordenador do Laboratório de Avaliação e Medidas (LAM/UFPA). É membro Titular da Academia Paraense de Ciências.
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
