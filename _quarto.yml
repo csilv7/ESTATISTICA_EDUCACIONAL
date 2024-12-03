@@ -1,0 +1,60 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Estatística Educacional"
+  author: 
+    name: "Breno C R Silva"
+    orresponding: true
+    orcid: 0009-0005-9740-2069
+    affiliation:
+      - Universidade Federal do Pará
+      - Instituto de Ciências Exatas e Naturais
+      - Curso de Bacharelado em Estatística
+  date: "02/12/2024"
+  
+  page-footer:
+    left: |
+      Copyright: (**SILVA, B.C.R - 2024**)
+    right: |
+      Construído <a href="https://quarto.org/"> Pacote Quarto no R4.3</a>.
+  repo-url : https://github.com/csilv7/ESTATISTICA_EDUCACIONAL
+  repo-subdir: book
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook]
+  page-navigation: true
+  
+  chapters:
+    - index.qmd
+    - summary.qmd
+
+format:
+  html:
+    number-sections: true
+    df-print: paged
+    theme:
+      light: [blue,custom.scss]
+      dark:  [cyborg,custom.scss]
+    toc: true
+    toc-title: Índice
+    toc-location: right
+    code-fold: true
+    code-tools: true
+    code-link: true
+  pdf:
+    documentclass: scrreprt
+    number-sections: true
+    pdf-engine: xelatex
+    fontsize: 12pt
+    geometry: margin=2cm
+    toc: true
+  docx:
+    number-sections: true
+
+execute:
+  echo: true
+
+lang: pt

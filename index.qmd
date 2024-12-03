@@ -1,0 +1,21 @@
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::
+
+![Teste para por uma imagem](brasao UFPA.jpg){fig-align="center" width="350" height="250"}
+
+# Apresentação {.unnumbered}
+
+-   **Prof. Dr. Héliton Ribeiro Tavares:** Possui graduação em Estatística pela Universidade de São Paulo (1992), mestrado em Estatística pela Universidade de São Paulo (1995), doutorado em Estatística pela Universidade de São Paulo (2001) e Pós-Doutorado na University of Florida (2016). Atualmente é professor Titular da Universidade Federal do Pará. Tem experiência na área de Probabilidade e Estatística, com ênfase em Modelagem e Análise de Dados Educacional, atuando principalmente em Teoria da Resposta ao Item, voltada para Avaliação Educacional, recebe a maior dedicação do pesquisador. Na UFPA foi Diretor do DERCA/CIAC e Diretor de Planejamento. No INEP/MEC foi Coordenador-Geral de Instrumentos e Medidas e Diretor de Avaliação da Educação Básica (2008-2010), Avaliador de Cursos e de Instituição da Educação Superior (2007-2011). Compõe a coordenação do Sistema de Avaliação do Rendimento Escolar do Estado de São Paulo (SARESP 2010-2019) e é Consultor para implantação do Sistema Paraense de Avaliação Educacional (SisPAE 2013-2016) junto à Seduc/BID. É Coordenador do Laboratório de Avaliação e Medidas (LAM/UFPA). É membro Titular da Academia Paraense de Ciências.
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::

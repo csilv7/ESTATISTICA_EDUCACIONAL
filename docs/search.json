@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Estatística Educacional",
+    "section": "",
+    "text": "Teste para por uma imagem\n\n\n\nApresentação\n\nProf. Dr. Héliton Ribeiro Tavares: Possui graduação em Estatística pela Universidade de São Paulo (1992), mestrado em Estatística pela Universidade de São Paulo (1995), doutorado em Estatística pela Universidade de São Paulo (2001) e Pós-Doutorado na University of Florida (2016). Atualmente é professor Titular da Universidade Federal do Pará. Tem experiência na área de Probabilidade e Estatística, com ênfase em Modelagem e Análise de Dados Educacional, atuando principalmente em Teoria da Resposta ao Item, voltada para Avaliação Educacional, recebe a maior dedicação do pesquisador. Na UFPA foi Diretor do DERCA/CIAC e Diretor de Planejamento. No INEP/MEC foi Coordenador-Geral de Instrumentos e Medidas e Diretor de Avaliação da Educação Básica (2008-2010), Avaliador de Cursos e de Instituição da Educação Superior (2007-2011). Compõe a coordenação do Sistema de Avaliação do Rendimento Escolar do Estado de São Paulo (SARESP 2010-2019) e é Consultor para implantação do Sistema Paraense de Avaliação Educacional (SisPAE 2013-2016) junto à Seduc/BID. É Coordenador do Laboratório de Avaliação e Medidas (LAM/UFPA). É membro Titular da Academia Paraense de Ciências.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Tarefa 1",
+    "section": "",
+    "text": "1. Gráfico de Funções\n1.1. Gerar o gráfico da função \\(f(x) = x^{2} - 5 x + 6\\), \\(x \\in [0, 4]\\).\nCódigo\n# Valores de x\nx &lt;- seq(0, 4, by = 0.01)\n\n# Função quadrática\nfx &lt;- x^2 - 5 * x + 6\n\n# Criando Data Frame para uso do ggplot2\ndf &lt;- data.frame(x = x, fx = fx)\n\n# Construindo o gráfico\nggplot(data = df, aes(x = x, y = fx)) +\n  geom_line() +\n  labs(x = \"x\", y = \"f(x)\") +\n  theme_classic()\n\n\n\n\n\nFunção Quadrática.\n1.2. Gerar o gráfico da Função Densidade de Probabilidade e a Função de Distribuição Acumulada da \\(N(0, 1)\\).\n1.3. Gerar o gráfico da função \\(f(x) = \\dfrac{1}{1 + \\exp\\{- Da(x -b)\\}}\\), com a = 1,5, b = 1 para D = 1 e D = 1,7.",
+    "crumbs": [
+      "Tarefa 1"
+    ]
+  },
+  {
+    "objectID": "summary.html#gráfico-de-funções",
+    "href": "summary.html#gráfico-de-funções",
+    "title": "Tarefa 1",
+    "section": "",
+    "text": "Código\n# Criar um conjunto de valores para o eixo x\nx &lt;- seq(-4, 4, by = 0.01)\n\n# Criar o data frame para os dados\ndados &lt;- data.frame(x = x, \n                    densidade = dnorm(x, mean = 0, sd = 1), \n                    acumulada = pnorm(x, mean = 0, sd = 1))\n\n# Plotar a função densidade de probabilidade\nggplot(dados, aes(x = x, y = densidade)) +\n  geom_line() +\n  labs(x = \"Valores de x\", y = \"Densidade\") +\n  theme_minimal()\n\n# Plotar a função de distribuição acumulada\nggplot(dados, aes(x = x, y = acumulada)) +\n  geom_line() +\n  labs(x = \"Valores de x\", y = \"Probabilidade Acumulada\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\n\n\n(a) Função Densidade de Probabilidade N(0,1)\n\n\n\n\n\n\n\n\n\n\n\n(b) Função de Distribuição Acumulada N(0,1)\n\n\n\n\n\n\n\nFigura 1: Distribuição Normal\n\n\n\n\n\nCódigo\na &lt;- 1.5\nb &lt;- 1\n\nD1 &lt;- 1\nD2 &lt;- 1.7\n\nx &lt;- seq(0, 10, by = 0.01)\nfx1 &lt;- 1 / (1 - exp(-D1*a*(x - b)))\nfx2 &lt;- 1 / (1 - exp(-D2*a*(x - b)))\n\ndf &lt;- data.frame(x = x, fx1 = fx1, fx2 = fx2)\n\nggplot(data = df, aes(x = x, y = fx1)) +\n  geom_line() +\n  labs(x = \"Valores de x\",\n       y = \"f(x)\") +\n  theme_classic()\n\nggplot(data = df, aes(x = x, y = fx2)) +\n  geom_line() +\n  labs(x = \"Valores de x\",\n       y = \"f(x)\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\n\n\n(a) a = 1,5; b = 1; D = 1\n\n\n\n\n\n\n\n\n\n\n\n(b) a = 1,5; b = 1; D = 1,7\n\n\n\n\n\n\n\nFigura 2: Funções com múltiplos parâmetros.",
+    "crumbs": [
+      "Tarefa 1"
+    ]
+  }
+]
